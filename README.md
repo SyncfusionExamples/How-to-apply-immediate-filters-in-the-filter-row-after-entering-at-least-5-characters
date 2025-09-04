@@ -4,7 +4,7 @@
 
 In the  [WPF DataGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) (SfDataGrid), by default, filters are applied immediately upon entering text in the [FilterRow](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.RowFilter.FilterRow.html) when the  [GridColumn.ImmediateUpdateColumnFilter](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumn.html#Syncfusion_UI_Xaml_Grid_GridColumn_ImmediateUpdateColumnFilter) property is set to true for the corresponding column.
 
-However, we can customize the immediate filter behavior of the FilterRow by creating a custom renderer that inherits from [FilterRowCellRenderers](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_FilterRowCellRenderers). By overriding the **ProcessSingleFilter()** method, filters can be applied when the filter value contains five or more characters, and removed when the filter length reaches zero.
+However, we can customize the immediate filter behavior of the FilterRow by creating a custom renderer that inherits from [FilterRowCellRenderers](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_FilterRowCellRenderers). By overriding the **ProcessSingleFilter** method, filters can be applied when the filter value contains five or more characters, and removed when the filter length reaches zero.
 
 
 **Overriding the renderer**
